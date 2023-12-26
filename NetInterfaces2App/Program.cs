@@ -29,6 +29,13 @@ Messanger<Message> messanger = new Messanger<Message>();
 messanger.Send(message);
 //
 
+User<Passport> user = new User<Passport>();
+
+struct Passport
+{
+    public string Series { set; get; }
+    public int Number { set; get; }
+}
 
 interface IMovable
 {
